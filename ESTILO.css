@@ -1,0 +1,188 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+}
+
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Estilo para la imagen y el botón de like */
+.blog-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.like-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.like-button:hover {
+    background-color: #218838;
+}
+
+/* Selector de color de texto */
+.color-selector {
+    margin-top: 20px;
+}
+
+#textColor {
+    margin-left: 10px;
+}
+
+/* Estilo del cuadro de comentarios y contador de palabras */
+.comment-box {
+    width: 100%;
+    max-width: 500px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.word-counter {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Mensaje animado */
+.animated-message {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scrollMessage 10s linear infinite;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+@keyframes scrollMessage {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Temporizador */
+.timer {
+    font-size: 32px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Tabla de series y películas */
+.table-container {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#favoritesTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#favoritesTable th, #favoritesTable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#favoritesTable th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Lista de tareas */
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-list li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Selector de fondo */
+.custom-bg-selector {
+    margin-top: 30px;
+}
+
+#backgroundColor {
+    margin-left: 10px;
+}
+
+/* Personalización del título del blog */
+#blogTitleInput {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Descripción del blog */
+.description {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.description.hidden {
+    display: none;
+}
+
+/* Estilos adicionales */
+#footerDate {
+    font-size: 14px;
+    color: white;
+}

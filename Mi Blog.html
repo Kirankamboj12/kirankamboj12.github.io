@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Personal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        Kiran Kamboj Ram Devi
+    </header>
+
+    <main>
+        <!-- Imagen del Blog con Like -->
+        <div style="text-align: left;">
+            <img src="https://www.ecoavant.com/uploads/s1/28/20/69/imagen-de-que-es-la-naturaleza_5_640x307.webp" alt="Imagen del blog" class="blog-image" id="blogImage">
+            <br>
+            <button class="like-button" id="likeButton">Like (<span id="likeCount">0</span>)</button>
+        </div>
+
+        <!-- Selector de Color de Texto -->
+        <div class="color-selector">
+            <label for="textColor">Selecciona el color del texto:</label>
+            <input type="color" id="textColor">
+        </div>
+
+        <!-- Comentarios con Contador de Palabras -->
+        <div>
+            <textarea class="comment-box" id="commentBox" placeholder="Escribe tu comentario..."></textarea>
+            <div class="word-counter">Palabras: <span id="wordCount">0</span></div>
+        </div>
+
+        <!-- Mensaje Animado -->
+        <div class="animated-message" id="animatedMessage">Este es un mensaje que se desplaza horizontalmente.</div>
+
+        <!-- Temporizador -->
+        <div class="timer" id="countdown">10</div>
+
+        <!-- Tabla de Series y Películas -->
+        <div class="table-container">
+            <table id="favoritesTable">
+                <thead>
+                    <tr>
+                        <th>Serie/Película</th>
+                        <th>Género</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>La Bella y la Bestia</td>
+                        <td>Animación</td>
+                    </tr>
+                    <tr>
+                        <td>Star Wars</td>
+                        <td>Ciencia Ficción</td>
+                    </tr>
+                    <tr>
+                        <td>Bull Durham</td>
+                        <td>Deportiva</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="button" id="invertRowsButton">Invertir Filas</button>
+        </div>
+
+        <!-- Lista de Tareas -->
+        <ul class="todo-list" id="todoList"></ul>
+        <div style="text-align: left;">
+            <input type="text" id="taskInput" placeholder="Agregar tarea...">
+            <button class="button" id="addTaskButton">Agregar Tarea</button>
+        </div>
+
+        <!-- Personalización del Fondo -->
+        <div class="custom-bg-selector">
+            <label for="backgroundColor">Color de fondo:</label>
+            <input type="color" id="backgroundColor">
+        </div>
+
+        <!-- Cambiar Título del Blog -->
+        <div style="text-align: left;">
+            <input type="text" id="blogTitleInput" placeholder="Escribe el nuevo título">
+        </div>
+
+        <!-- Descripción Desaparecer -->
+        <div class="description" id="blogDescription">Esta es una descripción interesante del blog.</div>
+        <button class="button" id="toggleDescriptionButton">Mostrar/Ocultar Descripción</button>
+    </main>
+
+    <footer>
+        <div class="footer-date" id="footerDate"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
